@@ -1,8 +1,39 @@
+.menu-top-bar {
+  background: #000
+}
+
+.left-sidebar .app-brand {
+  background: #3e3e3e;
+  font-size: 33px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.left-sidebar .app-brand > span {
+  flex: 1 1 auto;
+}
+
 .sidenav-container {
   height: 100%;
 }
 
 .sidenav {
-  width: 200px;
+  width: 260px;
   box-shadow: 3px 0 6px rgba(0,0,0,.24);
 }
+.spacer {
+  flex: 1 1 auto;
+}
+
+.icon-display {
+  transform: scale(1.8);
+}
+
+.arrow-dropdown {
+  transform: scale(1.5);
+}
+
+span.login-name {color: #fff; font-size: 14px;line-height: 22px; padding: 15px;}
+span.login-name .user-name{color: #e57c20}
+.sidebar-btn.responsive-btn {margin-left: -20px; background-color: #312b2b;border-radius: 10%;}

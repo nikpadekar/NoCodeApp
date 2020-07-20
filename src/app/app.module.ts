@@ -7,23 +7,26 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AdminNavComponent } from './admin-nav/admin-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MaterialModule } from './material.module';
-import { FirstPageComponent } from './first-page/first-page.component';
-import { SecondPageComponent } from './second-page/second-page.component';
-import { ThirdPageComponent } from './third-page/third-page.component';
+import { MyAppComponent } from './my-app/my-app.component';
+import { PublishStoryComponent } from './publish-story/publish-story.component';
+import { TemplatesComponent } from './templates/templates.component';
+import { AdminPanelComponent } from './admin-panel/admin-panel.component'
 
 const appRoutes: Routes = [
-  { path: 'first-page', component: FirstPageComponent},
-  { path: 'second-page', component: SecondPageComponent},
-  { path: 'third-page', component: ThirdPageComponent}
+  { path: 'my-app', component: MyAppComponent},
+  { path: 'publish-story', component: PublishStoryComponent},
+  { path: 'templates', component: TemplatesComponent},
+  { path: 'admin-panel', component: AdminPanelComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminNavComponent,
-    FirstPageComponent,
-    SecondPageComponent,
-    ThirdPageComponent
+    MyAppComponent,
+    PublishStoryComponent,
+    TemplatesComponent,
+    AdminPanelComponent
   ],
   imports: [
     BrowserModule,

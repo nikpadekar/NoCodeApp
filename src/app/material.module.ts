@@ -1,10 +1,21 @@
 import { NgModule } from "@angular/core";
 
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule } from '@angular/material';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatFormFieldModule} from '@angular/material/form-field';
-
+import {
+  MatToolbarModule,
+  MatButtonModule,
+  MatSidenavModule,
+  MatIconModule,
+  MatListModule,
+  MatCardModule,
+  MatInputModule,
+  MatSelectModule,
+  MatOptionModule,
+  MatDividerModule
+} from "@angular/material";
+import { MatMenuModule } from "@angular/material/menu";
+import { MatGridListModule } from "@angular/material/grid-list";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   imports: [
@@ -15,6 +26,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatListModule,
     MatCardModule,
     MatFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatDividerModule
   ],
   exports: [
     MatToolbarModule,
@@ -25,7 +42,13 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatCardModule,
     MatFormFieldModule,
     MatMenuModule,
-    MatGridListModule
-  ]
+    MatGridListModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatDividerModule
+  ],
 })
 export class MaterialModule {}
